@@ -1,4 +1,4 @@
-# tecnicas_de_algoritmos
+# Tecnicas de Algoritmos
 # Trabalho de Tecnicas e Analise de Algoritmos
 # Algoritmos Gulosos
 # Programação Dinamica
