@@ -4,10 +4,10 @@ def par_proximo(pri, segun, alvo):
     x = 0
     y = 0
     for i in range(len(pri)):
-        for i2 in range(len(segun)):
-            if abs(pri[i] + segun[i2] - alvo) < abs(pri[x] + segun[y] - alvo):
+        for j in range(len(segun)):
+            if abs(pri[i] + segun[j] - alvo) < abs(pri[x] + segun[y] - alvo):
                 x = i
-                y = i2
+                y = j
 
     return pri[x], segun[y]
 
