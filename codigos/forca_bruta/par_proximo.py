@@ -12,8 +12,8 @@ def par_proximo(pri, segun, alvo):
     return pri[x], segun[y]
 
 
-first = [1, 4, 19, 45]
-second = [2, 7, 10, 17]
-targe = 14
-par = par_proximo(pri=first, segun=second, alvo=targe)
+primeiro = [1, 4, 19, 45]
+segundo = [2, 7, 10, 17]
+alv = 14
+par = par_proximo(pri=primeiro, segun=segundo, alvo=alv)
 print(f'O par mais proximo é: {par}')
