@@ -1,16 +1,16 @@
-def max_recursive(lista, tamanho):
-    if tamanho == 1:
+def max_recursivo(lista, numero):
+    if numero == 1:
         return lista[0]
     else:
         x = int()
-        x = max_recursive(lista=lista, tamanho=tamanho - 1)
-        if x > lista[tamanho - 1]:
+        x = max_recursivo(lista=lista, numero=numero - 1)
+        if x > lista[numero - 1]:
             return x
         else:
-            return lista[tamanho - 1]
+            return lista[numero - 1]
 
 
 l = [2, 5, 3, 40, 29, 49, 23, 1]
-maxi = max_recursive(lista=l, tamanho=len(l))
+maxi = max_recursivo(lista=l, numero=len(l))
 print(l)
 print(f'O maior número do array é: {maxi}')

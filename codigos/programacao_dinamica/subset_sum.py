@@ -3,18 +3,18 @@ def is_sub_set_sum(conj, num, soma):
     subset = ([[False for i in range(soma + 1)] for i in range(num + 1)])
     print(subset[0])
 
-    for index in range(num + 1):
-        subset[index][0] = True
+    for i in range(num + 1):
+        subset[i][0] = True
 
-    for index in range(1, soma + 1):
-        subset[0][index] = False
+    for i in range(1, soma + 1):
+        subset[0][i] = False
 
-    for index in range(1, num + 1):
-        for index2 in range(1, soma + 1):
-            if index2 < conj[index - 1]:
-                subset[index][index2] = subset[index - 1][index2]
-            if index2 >= conj[index - 1]:
-                subset[index][index2] = (subset[index - 1][index2] or subset[index - 1][index2 - conj[index - 1]])
+    for i in range(1, num + 1):
+        for i2 in range(1, soma + 1):
+            if i2 < conj[i - 1]:
+                subset[i][i2] = subset[i - 1][i2]
+            if i2 >= conj[i - 1]:
+                subset[i][i2] = (subset[i - 1][i2] or subset[i - 1][i2 - conj[i - 1]])
 
     print(f'>>>> {subset}')
     return subset[num][soma]

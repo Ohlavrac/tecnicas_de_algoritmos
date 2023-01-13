@@ -1,32 +1,32 @@
 def sequenciamento_tarefas(array, t):
-    size = len(array)
+    tamanho = len(array)
 
     print(f'Array na ordem original: {array}')
 
-    for index in range(size):
-        for index2 in range(size - 1 - index):
-            if array[index2][2] < array[index2 + 1][2]:
-                array[index2], array[index2 + 1] = array[index2 + 1], array[index2]
+    for i in range(tamanho):
+        for i2 in range(tamanho - 1 - i):
+            if array[i2][2] < array[i2 + 1][2]:
+                array[i2], array[i2 + 1] = array[i2 + 1], array[i2]
 
     print(f'Array organizado em ordem crescente com base no lucro: {array}')
 
-    result = [False] * t
+    resultado = [False] * t
 
-    job = ['-1'] * t
+    trabalho = ['-1'] * t
 
-    print(job)
-    print(result)
+    print(trabalho)
+    print(resultado)
 
-    for index in range(len(array)):
-        print('>>>>', min(t - 1, array[index][1] - 1))
-        for index2 in range(min(t - 1, array[index][1] - 1), -1, -1):
-            if result[index2] is False:
-                result[index2] = True
-                job[index2] = array[index][0]
+    for i in range(len(array)):
+        print('>>>>', min(t - 1, array[i][1] - 1))
+        for i2 in range(min(t - 1, array[i][1] - 1), -1, -1):
+            if resultado[i2] is False:
+                resultado[i2] = True
+                trabalho[i2] = array[i][0]
                 break
 
-    print(job)
-    print(result)
+    print(trabalho)
+    print(resultado)
 
 
 arr = [['a', 2, 100],

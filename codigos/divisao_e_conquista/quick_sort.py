@@ -1,12 +1,12 @@
 def particionar(lista, inicio, fim):
     pivo = lista[fim - 1]
-    for index in range(inicio, fim):
-        if lista[index] > pivo:
+    for i in range(inicio, fim):
+        if lista[i] > pivo:
             fim += 1
         else:
             fim += 1
             inicio += 1
-            lista[index], lista[inicio - 1] = lista[inicio - 1], lista[index]
+            lista[i], lista[inicio - 1] = lista[inicio - 1], lista[i]
     return inicio - 1
 
 
