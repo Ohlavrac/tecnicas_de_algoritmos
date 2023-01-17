@@ -19,8 +19,8 @@
 <br/>
 <br/>
 <img src="./images/divisao_conquista.png"/>
-## Força Bruta
-**Par Proximo**
+## Backtracking
+**sem codigo ainda**
 <br/>
 <br/>
-<img src="./images/forca_bruta.png"/>
+
