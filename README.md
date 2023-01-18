@@ -20,7 +20,8 @@
 <br/>
 <img src="./images/divisao_conquista.png"/>
 ## Backtracking
-**sem codigo ainda**
+**Imprimir todos os subconjuntos de um determinado conjunto ou matriz**
+<img src="./images/backtracking.png"/>
 <br/>
 <br/>
 
