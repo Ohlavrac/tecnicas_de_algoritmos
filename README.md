@@ -5,7 +5,7 @@
 <br/>
 <img src="./images/guloso.png"/>
 ## Programação Dinamica
-**Subset Sum**
+**Coeficiente Binomial**
 <br/>
 <br/>
 <img src="./images/programacao_dinamica.png"/>
